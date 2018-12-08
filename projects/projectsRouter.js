@@ -39,14 +39,10 @@ router.post('/', (req, res) =>{
 
 router.delete('/:id', (req , res) =>{
     const {id} = req.params;
-    let deletedProject;
-    projectsDb.get(id).then(project =>{
-        deletedProject = project
-    })
     projectsDb.remove(id)
         .then(count =>{
             if(count){
-                res.json(deletedProject)
+                res.json({message : 'Project removed'})
             } else {
                 res.status(404).json({error : 'Missing ID for delete'})
             }
