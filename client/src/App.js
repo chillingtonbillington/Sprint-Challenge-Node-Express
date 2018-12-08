@@ -31,7 +31,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <NavBar />
+          <Route path = '/' component = {NavBar}/>
           <Route exact path = '/' render = {(props) => <ProjectsList  {...props} projects = {this.state.projects}/>}/>
       </div>
     );

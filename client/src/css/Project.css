@@ -1,0 +1,33 @@
+.project-container{
+     background-color: rgb(74, 97, 74); 
+    
+     margin:40px auto;
+    
+    padding:20px;
+    border-radius:5px;
+}
+
+.project-header{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-weight:bold;
+    text-decoration:underline;
+    font-size:24px;
+    text-align:center;
+}
+
+.project-description-container{
+    width:70%;
+    margin: 10px auto;
+    text-align:center;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color:rgb(117, 155, 117);
+}
+.project-description{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    
+    font-size: 18px;
+   
+}
