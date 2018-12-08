@@ -55,4 +55,19 @@ router.delete('/:id', (req, res) =>{
     })
 })
 
+router.put('/:id', (req, res) =>{
+    const {id} = req.params;
+    const action = req.body;
+    if(action.description && action.notes){
+        actionsDb.update(id, action).then(updatedAction =>{
+            res.json(updatedAction)
+        })
+        .catch(err =>{
+            res.status(404).json({error : 'Missing action description or note'})
+        })
+    } else {
+        res.status(500).json({error : 'Could not update action'})
+    }
+})
+
 module.exports = router;
