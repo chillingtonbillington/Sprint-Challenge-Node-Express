@@ -2,6 +2,7 @@
 
 ## What is Node.js?
 
+Node is
 ## What is Express?
 
 ## Mention two parts of Express that you learned about this week.
