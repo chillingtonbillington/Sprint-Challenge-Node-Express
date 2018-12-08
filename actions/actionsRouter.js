@@ -21,4 +21,20 @@ router.get('/:id', (req, res) =>{
     })
 })
 
+router.post('/', (req, res) =>{
+    const action = req.body;
+    if(action.description && action.notes){
+        actionsDb.insert(action).then(actionId =>{
+            actionsDb.get(actionId.id).then(newAction =>{
+                res.status(201).json(newAction)
+            })
+        })
+        .catch(err =>{
+            res.status(404).json({error : 'Missing action description or note'})
+        })
+    } else {
+        res.status(500).json({error: 'Could not complete new action post request'})
+    }
+})
+
 module.exports = router;
