@@ -24,12 +24,13 @@
     justify-content:space-around;
 }
 button{
-    border: 2px solid white;
+    border: 2px solid rgba(220, 228, 201, 0.938);
     border-radius: 5px;
-    width:100px;
-    height:35px;
+    width:120px;
+    height:50px;
     cursor:pointer;
     background-color:rgb(117, 155, 117);
     color:white;
     font-weight:bold;
+    font-size:18px;
 }

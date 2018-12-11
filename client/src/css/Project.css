@@ -20,14 +20,23 @@
     width:70%;
     margin: 10px auto;
     text-align:center;
-    border: 2px solid white;
+    border: 2px solid rgba(220, 228, 201, 0.938);
     border-radius: 5px;
     background-color:rgb(117, 155, 117);
+    padding:10px;
 }
 .project-description{
     color: white;
     font-family: 'Rubik', sans-serif;
-    
+    text-decoration:none;
+
     font-size: 18px;
    
+}
+.deleter{
+    cursor:pointer;
+    color:white;
+    font-weight:bold;
+    font-size:24px;
+    text-align:right;
 }

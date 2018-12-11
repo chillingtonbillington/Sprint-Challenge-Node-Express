@@ -8,7 +8,10 @@ class ProjectsList extends React.Component{
             <div className = 'projects-container'>
                 {this.props.projects.map(project =>{
                     return(
-                        <Project project = {project}/>
+                        <Project 
+                            project = {project}
+                            deleteProject = {this.props.deleteProject}
+                        />
                     )
                 })}
             </div>

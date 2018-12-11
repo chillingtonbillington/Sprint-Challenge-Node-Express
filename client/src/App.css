@@ -1,9 +1,17 @@
-.App {
+
+.outer{
   max-width:800px;
   width:100%;
   margin:30px auto;
   border:5px solid rgb(74, 97, 74);
-  background-color: rgba(190, 211, 190, 0.322);
+  background-color: rgba(194, 201, 178, 0.404);
+  border-radius:5px;
+}
+.App {
+  width:98%;
+  margin:5px auto;
+  border:5px solid rgb(117, 155, 117);
+  background-color: rgba(194, 201, 178, 0.582);
   border-radius:5px;
   font-family: 'Rubik', sans-serif;
 }
